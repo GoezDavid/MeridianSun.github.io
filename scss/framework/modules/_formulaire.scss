@@ -1,0 +1,39 @@
+/* MODULE FORMULAIRE ET BOUTTON */
+
+/*FORMULAIRE DE CONTACT*/
+
+form > div {
+  margin-top: 1em;
+}
+input, textarea {
+  width: 750px;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+  /* Pour souligner légèrement les éléments actifs */
+  border-color: #000;
+}
+
+textarea {
+  height: 15rem;
+  vertical-align: top;
+}
+.button-form {
+  background-color: $couleurGrisFoncer;
+  border-radius: 5px;
+  border-color: $couleurGrisFoncer;
+}
+/* Boutons */
+.button {
+  background-color: $couleurGrisFoncer;
+  border-radius: 5px;
+  border-color: $couleurGrisFoncer ;
+}
+
+.button:hover
+ {
+  background-color: $couleurNoir;
+  border-radius: 5px;
+  border-color:  $couleurNoir ;
+}

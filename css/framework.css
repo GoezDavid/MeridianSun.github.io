@@ -1,0 +1,612 @@
+@charset "UTF-8";
+/*
+variables du framework
+*/
+/* DIMENSION DES BOITES */
+/* TAILLE DES CONTENUS */
+/* COULEURS*/
+/*COULEURS POLICES */
+/* DIMENSION*/
+/* GRILLES */
+/*
+./scss/framework/modules/_boites.scss
+modules des boites
+*/
+/* TYPES DE BOITES */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+.boite-fixe {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.boite-item {
+  width: calc(100% + 2rem);
+  height: 500px;
+  position: relative;
+  left: calc(-1rem);
+}
+
+.boite-item-sound {
+  width: calc(100% + 2rem);
+  position: relative;
+  left: calc(-1rem);
+}
+
+.boite-form {
+  width: 100%;
+  max-width: 1000px;
+  background-color: #d3d3d3;
+  margin: auto;
+  padding: 1rem;
+}
+
+/* FLEX ITEM ORDER */
+.flex-item1 {
+  order: 1;
+  flex-grow: 0;
+}
+
+.flex-item2 {
+  order: 2;
+  flex-grow: 0;
+}
+
+.flex-item3 {
+  order: 3;
+  flex-grow: 0;
+}
+
+.flex-item4 {
+  order: 4;
+  flex-grow: 3;
+}
+
+.flex-item5 {
+  order: 5;
+  flex-grow: 0;
+}
+
+.flex-item6 {
+  order: 6;
+  flex-grow: 0;
+}
+
+.flex-item7 {
+  order: 7;
+  flex-grow: 0;
+}
+
+.flex-item8 {
+  order: 8;
+  flex-grow: 0;
+}
+
+/*
+./scss/framework/modules/_contenus.scss
+modules des boites
+*/
+/* ALIGNEMENT DES CONTENUS */
+.contenu-centrer {
+  text-align: center;
+}
+
+.contenu-gauche {
+  text-align: left;
+}
+
+.contenu-droite {
+  text-align: right;
+}
+
+.contenu-justifier {
+  text-align: justify;
+}
+
+/* COULEUR DES CONTENUS */
+.contenu-couleur1 {
+  color: #b05a5a;
+}
+
+.contenu-couleur2 {
+  color: #6b6b6b;
+}
+
+.contenu-couleur3 {
+  color: #999;
+}
+
+/* POLICES DES CONTENUS*/
+.police-texte {
+  font-family: 'Merriweather', serif;
+}
+
+.police-titre {
+  font-family: "MarketDecoRegular";
+}
+
+.police-logo {
+  font-family: 'Kaushan Script', 'regular400', cursive;
+}
+
+/*TAILLE TEXTE*/
+.texte-grand {
+  font-size: 3rem;
+}
+
+.texte-medium {
+  font-size: 1.5rem;
+}
+
+.texte-petit {
+  font-size: 1rem;
+}
+
+/* ICONES */
+/* IMAGES  */
+.image-about {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  padding-right: 1rem;
+}
+
+figure {
+  margin: 0;
+}
+
+/* MODULE DES MENUS */
+/* TYPES DE MENUS */
+/* BARRE DE RECHERCHE HEADER */
+.search {
+  padding-left: 0.5rem;
+}
+
+.searchTerm {
+  width: 60px;
+  border: 1px solid #000000;
+}
+
+.searchButton {
+  border: 2px solid #000000;
+  background-color: #000000;
+  position: absolute;
+  width: 25px;
+}
+
+/*BARRE DE RECHERCHE FOOTER*/
+.search-down {
+  background-color: #000000;
+  border: 4px solid #000000;
+  width: 100%;
+}
+
+/* NAVIGATEUR */
+.menu-l-horizontale {
+  background: #b05a5a;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
+  width: calc(100% + 2rem + 40px);
+  position: relative;
+  left: calc(-1rem - 20px);
+}
+
+.menu-l-horizontale:before, .menu-l-horizontale:after {
+  content: '';
+  display: block;
+  background: #6e3a3a;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: -10px;
+  z-index: -1;
+}
+
+.menu-l-horizontale:before {
+  left: 0;
+  transform: skewY(45deg);
+}
+
+.menu-l-horizontale:after {
+  right: 0;
+  transform: skewY(-45deg);
+}
+
+.menu-l-horizontale > ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-l-horizontale > ul > li > a {
+  padding: 2rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-m-horizontale {
+  background: #b05a5a;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
+  width: calc(100% + 2rem);
+  position: relative;
+  left: calc(-1rem);
+}
+
+.menu-m-horizontale > ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-m-horizontale > ul > li > a {
+  padding: 2rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-s-select {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-s-select > select {
+  width: 50%;
+}
+
+/*entete*/
+.entete {
+  display: flex;
+  justify-content: flex-end;
+  margin: auto;
+  align-items: center;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+.entete > h1 {
+  margin-right: auto;
+}
+
+.entete > input {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* MODULES DES GRILLES */
+* {
+  box-sizing: border-box;
+}
+
+.grille-g {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grille-g > * {
+  margin: 0.5rem;
+  flex-basis: calc(100% - (2 * 0.5rem));
+}
+
+@media screen and (min-width: 0) {
+  .xs1 {
+    flex-basis: calc((1 * 100% / 12) - (2 * 0.5rem));
+  }
+  .xs2 {
+    flex-basis: calc((2 * 100% / 12) - (2 * 0.5rem));
+  }
+  .xs3 {
+    flex-basis: calc((3 * 100% / 12) - (2 * 0.5rem));
+  }
+  .xs4 {
+    flex-basis: calc((4 * 100% / 12) - (2 * 0.5rem));
+  }
+  .xs5 {
+    flex-basis: calc((5 * 100% / 12) - (2 * 0.5rem));
+  }
+  .xs6 {
+    flex-basis: calc((6 * 100% / 12) - (2 * 0.5rem));
+  }
+  .xs7 {
+    flex-basis: calc((7 * 100% / 12) - (2 * 0.5rem));
+  }
+  .xs8 {
+    flex-basis: calc((8 * 100% / 12) - (2 * 0.5rem));
+  }
+  .xs9 {
+    flex-basis: calc((9 * 100% / 12) - (2 * 0.5rem));
+  }
+  .xs10 {
+    flex-basis: calc((10 * 100% / 12) - (2 * 0.5rem));
+  }
+  .xs11 {
+    flex-basis: calc((11 * 100% / 12) - (2 * 0.5rem));
+  }
+  .xs12 {
+    flex-basis: calc((12 * 100% / 12) - (2 * 0.5rem));
+  }
+}
+
+@media screen and (min-width: 568px) {
+  .s1 {
+    flex-basis: calc((1 * 100% / 12) - (2 * 0.5rem));
+  }
+  .s2 {
+    flex-basis: calc((2 * 100% / 12) - (2 * 0.5rem));
+  }
+  .s3 {
+    flex-basis: calc((3 * 100% / 12) - (2 * 0.5rem));
+  }
+  .s4 {
+    flex-basis: calc((4 * 100% / 12) - (2 * 0.5rem));
+  }
+  .s5 {
+    flex-basis: calc((5 * 100% / 12) - (2 * 0.5rem));
+  }
+  .s6 {
+    flex-basis: calc((6 * 100% / 12) - (2 * 0.5rem));
+  }
+  .s7 {
+    flex-basis: calc((7 * 100% / 12) - (2 * 0.5rem));
+  }
+  .s8 {
+    flex-basis: calc((8 * 100% / 12) - (2 * 0.5rem));
+  }
+  .s9 {
+    flex-basis: calc((9 * 100% / 12) - (2 * 0.5rem));
+  }
+  .s10 {
+    flex-basis: calc((10 * 100% / 12) - (2 * 0.5rem));
+  }
+  .s11 {
+    flex-basis: calc((11 * 100% / 12) - (2 * 0.5rem));
+  }
+  .s12 {
+    flex-basis: calc((12 * 100% / 12) - (2 * 0.5rem));
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .m1 {
+    flex-basis: calc((1 * 100% / 12) - (2 * 0.5rem));
+  }
+  .m2 {
+    flex-basis: calc((2 * 100% / 12) - (2 * 0.5rem));
+  }
+  .m3 {
+    flex-basis: calc((3 * 100% / 12) - (2 * 0.5rem));
+  }
+  .m4 {
+    flex-basis: calc((4 * 100% / 12) - (2 * 0.5rem));
+  }
+  .m5 {
+    flex-basis: calc((5 * 100% / 12) - (2 * 0.5rem));
+  }
+  .m6 {
+    flex-basis: calc((6 * 100% / 12) - (2 * 0.5rem));
+  }
+  .m7 {
+    flex-basis: calc((7 * 100% / 12) - (2 * 0.5rem));
+  }
+  .m8 {
+    flex-basis: calc((8 * 100% / 12) - (2 * 0.5rem));
+  }
+  .m9 {
+    flex-basis: calc((9 * 100% / 12) - (2 * 0.5rem));
+  }
+  .m10 {
+    flex-basis: calc((10 * 100% / 12) - (2 * 0.5rem));
+  }
+  .m11 {
+    flex-basis: calc((11 * 100% / 12) - (2 * 0.5rem));
+  }
+  .m12 {
+    flex-basis: calc((12 * 100% / 12) - (2 * 0.5rem));
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .l1 {
+    flex-basis: calc((1 * 100% / 12) - (2 * 0.5rem));
+  }
+  .l2 {
+    flex-basis: calc((2 * 100% / 12) - (2 * 0.5rem));
+  }
+  .l3 {
+    flex-basis: calc((3 * 100% / 12) - (2 * 0.5rem));
+  }
+  .l4 {
+    flex-basis: calc((4 * 100% / 12) - (2 * 0.5rem));
+  }
+  .l5 {
+    flex-basis: calc((5 * 100% / 12) - (2 * 0.5rem));
+  }
+  .l6 {
+    flex-basis: calc((6 * 100% / 12) - (2 * 0.5rem));
+  }
+  .l7 {
+    flex-basis: calc((7 * 100% / 12) - (2 * 0.5rem));
+  }
+  .l8 {
+    flex-basis: calc((8 * 100% / 12) - (2 * 0.5rem));
+  }
+  .l9 {
+    flex-basis: calc((9 * 100% / 12) - (2 * 0.5rem));
+  }
+  .l10 {
+    flex-basis: calc((10 * 100% / 12) - (2 * 0.5rem));
+  }
+  .l11 {
+    flex-basis: calc((11 * 100% / 12) - (2 * 0.5rem));
+  }
+  .l12 {
+    flex-basis: calc((12 * 100% / 12) - (2 * 0.5rem));
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .xl1 {
+    flex-basis: calc((1 * 100% / 12) - (2 * 0.5rem));
+  }
+  .xl2 {
+    flex-basis: calc((2 * 100% / 12) - (2 * 0.5rem));
+  }
+  .xl3 {
+    flex-basis: calc((3 * 100% / 12) - (2 * 0.5rem));
+  }
+  .xl4 {
+    flex-basis: calc((4 * 100% / 12) - (2 * 0.5rem));
+  }
+  .xl5 {
+    flex-basis: calc((5 * 100% / 12) - (2 * 0.5rem));
+  }
+  .xl6 {
+    flex-basis: calc((6 * 100% / 12) - (2 * 0.5rem));
+  }
+  .xl7 {
+    flex-basis: calc((7 * 100% / 12) - (2 * 0.5rem));
+  }
+  .xl8 {
+    flex-basis: calc((8 * 100% / 12) - (2 * 0.5rem));
+  }
+  .xl9 {
+    flex-basis: calc((9 * 100% / 12) - (2 * 0.5rem));
+  }
+  .xl10 {
+    flex-basis: calc((10 * 100% / 12) - (2 * 0.5rem));
+  }
+  .xl11 {
+    flex-basis: calc((11 * 100% / 12) - (2 * 0.5rem));
+  }
+  .xl12 {
+    flex-basis: calc((12 * 100% / 12) - (2 * 0.5rem));
+  }
+}
+
+/* GALLERIE */
+.gallery-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.gallery > img {
+  width: 100%;
+  margin: auto;
+}
+
+.gallery > iframe {
+  width: 100%;
+  margin: auto;
+}
+
+/* MODULE DE VISIBILITE */
+.xs-visible {
+  display: none;
+}
+
+@media screen and (min-width: 0) {
+  .xs-cache {
+    display: none;
+  }
+  .xs-visible {
+    display: block;
+  }
+}
+
+.s-visible {
+  display: none;
+}
+
+@media screen and (min-width: 568px) {
+  .s-cache {
+    display: none;
+  }
+  .s-visible {
+    display: block;
+  }
+}
+
+.m-visible {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .m-cache {
+    display: none;
+  }
+  .m-visible {
+    display: block;
+  }
+}
+
+.l-visible {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .l-cache {
+    display: none;
+  }
+  .l-visible {
+    display: block;
+  }
+}
+
+.xl-visible {
+  display: none;
+}
+
+@media screen and (min-width: 1240px) {
+  .xl-cache {
+    display: none;
+  }
+  .xl-visible {
+    display: block;
+  }
+}
+
+/* MODULE FORMULAIRE ET BOUTTON */
+/*FORMULAIRE DE CONTACT*/
+form > div {
+  margin-top: 1em;
+}
+
+input, textarea {
+  width: 750px;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+  /* Pour souligner légèrement les éléments actifs */
+  border-color: #000;
+}
+
+textarea {
+  height: 15rem;
+  vertical-align: top;
+}
+
+.button-form {
+  background-color: #293133;
+  border-radius: 5px;
+  border-color: #293133;
+}
+
+/* Boutons */
+.button {
+  background-color: #293133;
+  border-radius: 5px;
+  border-color: #293133;
+}
+
+.button:hover {
+  background-color: #000000;
+  border-radius: 5px;
+  border-color: #000000;
+}

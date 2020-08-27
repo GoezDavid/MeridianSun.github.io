@@ -1,0 +1,73 @@
+/*
+./scss/framework/modules/_contenus.scss
+modules des boites
+*/
+/* ALIGNEMENT DES CONTENUS */
+.contenu-centrer {
+  text-align: center;
+}
+
+.contenu-gauche {
+  text-align: left;
+}
+
+.contenu-droite {
+text-align: right;
+}
+
+.contenu-justifier {
+  text-align: justify;
+}
+/* COULEUR DES CONTENUS */
+.contenu-couleur1{
+  color: $couleur1;
+}
+.contenu-couleur2 {
+  color: $couleur2;
+}
+
+.contenu-couleur3 {
+  color: $couleur3;
+}
+
+/* POLICES DES CONTENUS*/
+
+
+.police-texte {
+  font-family: 'Merriweather', serif ;
+  @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+}
+.police-titre {
+    font-family: "MarketDecoRegular";
+  }
+
+
+.police-logo {
+  font-family: 'Kaushan Script', 'regular400', cursive;
+  @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+}
+
+/*TAILLE TEXTE*/
+.texte-grand {
+  font-size: 3rem ;
+}
+
+.texte-medium {
+  font-size: 1.5rem ;
+}
+
+.texte-petit {
+  font-size: 1rem ;
+}
+
+/* ICONES */
+
+
+
+/* IMAGES  */
+.image-about {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  padding-right: 1rem;
+}

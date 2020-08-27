@@ -1,0 +1,68 @@
+/*
+./scss/framework/modules/_boites.scss
+modules des boites
+*/
+/* TYPES DE BOITES */
+.boite-fixe {
+  width: 100% ;
+  max-width: 1100px;
+  margin: auto;
+  padding: 1rem;
+}
+.boite-item {
+width: calc(100% + 2rem);
+  height: 500px;
+
+  position: relative;
+left: calc(-1rem);
+}
+.boite-item-sound {
+  width: calc(100% + 2rem);
+    position: relative;
+  left: calc(-1rem);
+}
+
+.boite-form {
+  width: 100%;
+  max-width: 1000px;
+  background-color: $couleurForm;
+  margin: auto;
+  padding: 1rem;
+}
+
+/* FLEX ITEM ORDER */
+.flex-item1 {
+  order: 1;
+  flex-grow: 0;
+}
+.flex-item2 {
+  order: 2;
+  flex-grow: 0;
+}
+.flex-item3 {
+  order: 3;
+  flex-grow: 0;
+}
+
+.flex-item4 {
+  order: 4;
+  flex-grow: 3;
+}
+.flex-item5 {
+  order: 5;
+  flex-grow:  0;
+}
+
+.flex-item6 {
+  order: 6;
+  flex-grow: 0;
+}
+.flex-item7 {
+  order: 7;
+  flex-grow: 0;
+}
+
+.flex-item8 {
+  order: 8;
+  flex-grow: 0;
+}

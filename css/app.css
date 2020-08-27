@@ -1,0 +1,27 @@
+/* SPECIFICATIONS GENERALES (VALEURS PAR DEFAUT)   */
+.background-body {
+  background-image: url("../documents/images/bg1.jpg");
+}
+
+/*  OBJET PARTICULIERS (IDENTIFIES PAR UN ID)  */
+#header {
+  background: #fff;
+}
+
+#section-principale {
+  background: #fff;
+}
+
+#bas-de-page-l {
+  background: #2e2e2e;
+}
+
+#bas-de-page-s {
+  background: #2e2e2e;
+}
+
+#footer {
+  background: #191919;
+}
+
+/* MEDIA QUERIES*/

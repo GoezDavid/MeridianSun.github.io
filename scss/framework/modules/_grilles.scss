@@ -1,0 +1,44 @@
+/* MODULES DES GRILLES */
+* {
+  box-sizing: border-box;
+}
+.grille-g {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grille-g > * {
+  margin: $grillesGoutieres ;
+  flex-basis: calc(100% - (2 * #{$grillesGoutieres})) ;
+}
+
+@each $etiquette, $dimension in $grilleBreakPoint {
+  @media screen and (min-width: #{$dimension}) {
+    @for $i from 1 through $grillesColonnesNombres {
+      .#{$etiquette}#{$i} {
+        flex-basis: calc((#{$i} * 100% / #{$grillesColonnesNombres}) - (2 * #{$grillesGoutieres}));
+    }
+   }
+ }
+}
+
+
+/* GALLERIE */
+.gallery-box{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-gap: 1rem;
+
+}
+
+
+.gallery > img {
+  width: 100%;
+  margin: auto;
+
+}
+.gallery > iframe {
+  width: 100%;
+margin: auto;
+
+}

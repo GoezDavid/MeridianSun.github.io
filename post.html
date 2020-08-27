@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>navigation</title>
+    <link rel="stylesheet" href="css/framework.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body class="background-body">
+    <!-- Valider par le W3C -->
+<header id="header" class="boite-fixe">
+  <div class="entete">
+  <h1 class="police-logo contenu-couleur2">The Meridian Sun</h1>
+  <img src="documents/images/icon-rss.png" alt="icone rss">
+  <img src="documents/images/icon-facebook.png" alt="icone  facebook">
+  <img src="documents/images/icon-twitter.png" alt="icone  twitter">
+  <img src="documents/images/icon-dribbble.png" alt="icone dribbble">
+  <img src="documents/images/icon-linkedin.png" alt="icone linkedin">
+  <img src="documents/images/icon-pinterest.png" alt="icone pinterest">
+<div class="search">
+<input class="police-texte searchTerm" type="text"  name="search" value="" placeholder="Search" >
+<button type="submit" class="searchButton" name="button">
+  <img src="documents/images/icon-search.png" alt="icone">
+</button>
+</div>
+</div>
+  <nav class="menu-l-horizontale l-visible">
+    <ul>
+      <li><a href="index.html">BLOG</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+  <nav class="menu-m-horizontale m-visible l-cache" >
+    <ul>
+      <li><a href="index.html">BLOG</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+  <nav class="menu-s-select  l-cache m-cache">
+  <select name="search"  onChange="location.href=''+this.options[this.selectedIndex].value+'.html';">
+    <option value="index">Blog</option>
+    <option value="about">About</option>
+    <option value="contact">Contact</option>
+    <option value="post">Navigation</option>
+
+</select>
+</nav>
+</header>
+
+      <main class="boite-fixe" id="section-principale" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
+        <p itemprop="text" class="contenu-centrer contenu-couleur2 taille-petit"><span class="contenu-couleur1">Home</span> / <span class="contenu-couleur1">photography</span> / A wonderful complexity </p>
+        <section class="contenu-centrer" itemprop="mainEntity">
+            <h2 class="contenu-couleur1" itemprop="name">A WONDERFUL COMPLEXITY</h2>
+            <p class="contenu-couleur2 police-texte texte-petit" itemprop="text">
+            <img src="documents/images/icon-image.png" alt="icone" itemprop="image">  | May 21, 2020 | photography | 4 comments
+            </p>
+            <img class="boite-item" src="documents/images/post1.jpg" alt="photo" itemprop="image">
+            <p class="contenu-couleur2 police-texte" itemprop="text">A wonderful complexity has taken possession of my entire soul, like these sweet mornings of spring which i enjoy with my whole hearth. I am alone, and fell the charm existence in this spot, which was created for  the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that i neglect my talents.</p>
+            <p  class="contenu-couleur2 police-texte" itemprop="text">Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Donec sollicitudin molestie malesuada. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
+            <p  class="contenu-couleur3 police-texte texte-petit" itemprop="text">#photo,#professional</p>
+          </section>
+          <div class="contenu-centrer">
+           <button class="button contenu-couleur3 police-texte" type="button" name="Prev Post">Prev Post</button>
+           <button  class="button contenu-couleur3 police-texte" type="button" name="Next Post">Next Post</button>
+         </div>
+         <div class="contenu-centrer m-visible">
+           <form class="" action="index.html" method="get">
+           <button class="button contenu-couleur3 police-texte" type="submit" name="before">&lt;</button>
+           <button  class="button contenu-couleur3 police-texte" type="submit" name="after">&gt;</button>
+         </form>
+         </div>
+        <section itemprop="mainEntity">
+        <h2 class="contenu-couleur1" itemprop="name">RELATED POSTS</h2>
+        <div class="gallery-box">
+        <div class="gallery">
+        <img src="documents/images/post1.jpg" alt="photo" itemprop="image" >
+        <h3 class="contenu-couleur1" itemprop="name">A WONDERFUL COMPLEXITY</h3>
+        <p  class="contenu-couleur2 police-texte texte-petit" itemprop="text"> photo | May 20, 2020 | 1 comment</p>
+        </div>
+
+        <div class="gallery">
+      <iframe itemprop="video" width="1000" height="200" src="https://www.youtube.com/embed/Ks-5NdifH5I" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3 itemprop="name" class="contenu-couleur1">LED BY A DRESSED MONKEY</h3>
+        <p itemprop="text"  class="contenu-couleur2 police-texte texte-petit"> <img src="documents/images/icon-video.png" alt="icone"> | May 19, 2020 | 1 comment</p>
+        </div>
+        <div class="gallery">
+        <img itemprop="image" src="documents/images/post2.jpg" alt="photo">
+        <h3 itemprop="name" class="contenu-couleur1">A DAY IN THE LIFE</h3>
+        <P itemprop="text" class="contenu-couleur2 police-texte texte-petit"> <img src="documents/images/icon-image.png" alt="icone">| May 17, 2020 | No comments</P>
+        </div>
+      </div>
+      </section>
+      </main>
+      <div class="m-visible">
+      <section class="boite-fixe grille-g" id="bas-de-page-l">
+      <div class="l2 m2 flex-item1">
+      <h2 class="contenu-couleur1 police-titre " >SEARCH</h2>
+      <input class="police-texte contenu-couleur3 search-down"  name="search" value="" placeholder="Search" >
+      </div>
+      <div class="l3 m3 flex-item5 ">
+      <h2 class="contenu-couleur1 police-titre">RECENT POST</h2>
+      <ul class="police-texte contenu-couleur3">
+        <li>A Wonderful Complexity</li>
+        <li>The Meridian Sun</li>
+        <li>Gallery Format</li>
+        <li>John Doe</li>
+        <li>A Day In The Life</li>
+      </ul>
+      </div>
+      <div class="l3 m3 flex-item2">
+      <h2 class="contenu-couleur1 police-titre ">TWITTER</h2>
+      <p  class="police-texte contenu-couleur3 ">&rarr;Follow @iepsdesign</p>
+      </div>
+      <div class="l3 m3 flex-item3">
+        <h2 class="contenu-couleur1 police-titre">TAGS</h2>
+        <p  class="police-texte contenu-couleur3 texte-petit">blogroll <span class="texte-grand">daily</span> dialog gallery journal link motion music <span class="texte-grand">photo</span> <span class="texte-medium">professional</span> quotation show sound video</p>
+      </div>
+      <div class="l3 m3 flex-item7">
+        <h2 class="contenu-couleur1 police-titre">ARCHIVES</h2>
+        <ul  class="police-texte contenu-couleur3">
+      <li>May 2020</li>
+      <li>April 2020</li>
+        </ul>
+      </div>
+      <div class="l3 m3 flex-item4">
+        <h2 class="contenu-couleur1 police-titre">ABOUT</h2>
+        <p  class="police-texte contenu-couleur3">I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.</p>
+      </div>
+      <div class="l2 m2 flex-item6">
+      </div>
+      <div class="flex-item8 l4 m4">
+      <p class="police-texte contenu-couleur3">i am so happy, so absorbed in the exquisite sense of  mere tranquil existance, that i neglect my talents. </p>
+      </div>
+      </section>
+      </div>
+
+      <div class="l-cache m-cache">
+      <section class="boite-fixe grille-g" id="bas-de-page-s">
+      <div class="">
+      <h2 class="contenu-couleur1 police-titre " >SEARCH</h2>
+      <input class="police-texte contenu-couleur3 search-down"  name="search" value="" placeholder="Search" >
+      </div>
+      <div class="">
+      <h2 class="contenu-couleur1 police-titre">RECENT POST</h2>
+      <ul class="police-texte contenu-couleur3">
+        <li>A Wonderful Complexity</li>
+        <li>The Meridian Sun</li>
+        <li>Gallery Format</li>
+        <li>John Doe</li>
+        <li>A Day In The Life</li>
+      </ul>
+      </div>
+      <div class="">
+      <h2 class="contenu-couleur1 police-titre ">TWITTER</h2>
+      <p  class="police-texte contenu-couleur3 ">&rarr;Follow @iepsdesign</p>
+      </div>
+      <div class="">
+        <h2 class="contenu-couleur1 police-titre">TAGS</h2>
+        <p  class="police-texte contenu-couleur3 texte-petit">blogroll <span class="texte-grand">daily</span> dialog gallery journal link motion music <span class="texte-grand">photo</span> <span class="texte-medium">professional</span> quotation show sound video</p>
+      </div>
+      <div class="">
+        <h2 class="contenu-couleur1 police-titre">ARCHIVES</h2>
+        <ul  class="police-texte contenu-couleur3">
+      <li>May 2020</li>
+      <li>April 2020</li>
+        </ul>
+      </div>
+      <div class="">
+        <h2 class="contenu-couleur1 police-titre">ABOUT</h2>
+        <p  class="police-texte contenu-couleur3">I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.</p>
+        <p class="police-texte contenu-couleur3">i am so happy, so absorbed in the exquisite sense of  mere tranquil existance, that i neglect my talents.</p>
+      </div>
+      <div class="">
+      </div>
+      <div class="">
+
+      </div>
+      </section>
+      </div>
+
+      <footer class="contenu-centrer boite-fixe" id="footer" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
+      <p  class="police-texte contenu-couleur3 texte-petit" itemprop="copyrightHolder">Copyright 2020-The Meridian Sun</p>
+
+      </footer>
+        </body>
+      </html>
